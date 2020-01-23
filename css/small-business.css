@@ -3,11 +3,23 @@
  * Copyright 2014 ForBetterWeb
  * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
-div.container {
-    max-width:100% !important;
-    height:auto;
-    display:block;
+div.container img {
+  max-width: 100%;
+  display: inline-block;
 }
+/* Для средних устройств (планшеты) */
+@media (min-width: 420px) {
+  img {
+    max-width: 48%;
+  }
+}
+/* Для больших устройств (ноуты, пк) */
+@media (min-width: 760px) {
+  img {
+    max-width: 24%;
+  }
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-size: 20px;
